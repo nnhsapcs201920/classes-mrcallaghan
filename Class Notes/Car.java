@@ -73,8 +73,6 @@ public class Car  // public means others can see and use it
         this.licensePlate = "";
     }
     
-    
-    
     /*
      * When defining a method, specify:
      *      the visibility (e.g. public)
@@ -90,7 +88,7 @@ public class Car  // public means others can see and use it
      */
     public void drive( double distance )
     {
-        // write method headers first and test and fill in the method bodies later
+        this.fuelInTank -= ( distance / this.fuelEfficiency );
     }
     
     /**
@@ -100,7 +98,7 @@ public class Car  // public means others can see and use it
      */
     public void addFuel( double amount )
     {
-    
+        this.fuelInTank += amount;
     }
     
     /**
@@ -110,7 +108,7 @@ public class Car  // public means others can see and use it
      */
     public double getFuelInTank()
     {
-        return 0;
+        return this.fuelInTank;
     }
     
     /**
@@ -120,7 +118,7 @@ public class Car  // public means others can see and use it
      */
     public void setLicensePlate( String plate )
     {
-        
+        this.licensePlate = plate;
     }
     
     /**
@@ -130,7 +128,7 @@ public class Car  // public means others can see and use it
      */
     public String getLicensePlate( )
     {
-        return "";
+        return this.licensePlate;
     }
     
 }
