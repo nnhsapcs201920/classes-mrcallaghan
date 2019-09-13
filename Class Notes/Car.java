@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Car here.
  * This class models a car that drives and consumes fuel.  It also has a license plate.
@@ -88,7 +87,7 @@ public class Car  // public means others can see and use it
      */
     public void drive( double distance )
     {
-        this.fuelInTank -= ( distance / this.fuelEfficiency );
+        this.fuelInTank -= ( this.fuelEfficiency / distance );
     }
     
     /**
