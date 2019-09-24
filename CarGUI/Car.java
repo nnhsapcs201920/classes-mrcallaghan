@@ -51,7 +51,9 @@ public class Car
       // draws the car
       g2.draw(body);
       g2.draw(frontTire);
+      g2.fill(frontTire);
       g2.draw(rearTire);
+      g2.fill(rearTire);
       g2.draw(frontWindshield);      
       g2.draw(roofTop);      
       g2.draw(rearWindshield);      
