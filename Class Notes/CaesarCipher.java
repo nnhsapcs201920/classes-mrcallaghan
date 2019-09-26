@@ -163,7 +163,7 @@ public class CaesarCipher
          *   This is a widening conversion (i.e., long to double)
          */
         
-        double yearsAsDecimal = totalSecond;
+        double yearsAsDecimal = totalSeconds;
         
         /*
          * Arithmetic Promotion
