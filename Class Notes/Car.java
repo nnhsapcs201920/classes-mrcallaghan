@@ -130,4 +130,17 @@ public class Car  // public means others can see and use it
         return this.licensePlate;
     }
     
+    /**
+     * Returns a string representation that describes a Car object.
+     * 
+     * @return str a string that describes a car's efficiency and fuel and license plate
+     */
+    public String toString()
+    {
+        String str = "Fuel efficiency: " + this.fuelEfficiency +
+                    "\nFuel in tank: " + this.getFuelInTank() +
+                    "\nLicense plate: " + this.getLicensePlate(); //preferable to use the accessor
+        return str;
+    }
+    
 }
